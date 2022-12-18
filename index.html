@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Weather Today</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="input-form mx-auto">
+                    <input type="text" name="cityName" id="cityInput" class="search-bar btn btn-dark" placeholder="Search Your City">
+                    <button onclick="getCityName()" class="submit-button"><i class="fa fa-search"></i></button>
+                    
+            </div>
+            <div class="weather row">
+                <div class="main-weather col-md-6 mx-auto">
+                        <div><h1 id="city-name">City</h1></div>
+                    
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div class="temp-item">
+                                <div>Temp</div>
+                                <div id="temp"></div>
+                            </div>
+                            <div class="temp-item">
+                                <div>Temp - Min</div>
+                                <div id="temp-min"></div>
+                            </div>
+                            <div class="temp-item">
+                                <div>Temp - Max</div>
+                                <div id="temp-max"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5" id="weather-icon"></div>
+                    </div>
+                </div>
+                <div class="other-details col-md-5 mx-auto">
+                    <div class="other-weather-item">
+                        <div>Pressure (m/s)</div>
+                        <div id="pressure"></div>
+                    </div>
+                    <div class="other-weather-item">
+                        <div>Humidity</div>
+                        <div id="humidity"></div>
+                    </div>
+                    <div class="other-weather-item">
+                        <div>Wind Speed</div>
+                        <div id="wind-speed"></div>
+                    </div>
+                    <div class="other-weather-item">
+                        <div>Sunrise</div>
+                        <div id="sun-rise"></div>
+                    </div>
+                    <div class="other-weather-item">
+                        <div>Sunset</div>
+                        <div id="sun-set"></div>
+                    </div>
+                    <!-- <div class="other-weather-item">
+                        <div>Description</div>
+                        <div id="description"></div>
+                    </div> -->
+                </div>
+            </div> 
+        </div>
+        <div class="contact">
+            <p><small>© Prasanthi Kasse</small></p>
+            <span><a href="mailto:kasseprasanthi23@gmail.com" target="_blank"><i class="fa fa-envelope social-icon"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/prasanthi-k-07504a1b0/" target="_blank"><i class="fa fa-linkedin social-icon"></i></a></span>
+            <span><a href="https://github.com/prasanthi2001" target="_blank"><i class="fa fa-github social-icon"></i></a></span>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

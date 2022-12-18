@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", "Serif"; 
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(67, 49, 140);
+    border: 1px solid rgb(67, 49, 140);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #fff;
+}
+
+.input-form {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 6px;
+}
+
+.search-bar {
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.search-bar:focus {
+    outline: 0;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+.search-bar:hover, .submit-button:hover {
+    background-color: rgb(0, 0, 0);
+}
+.submit-button {
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff; 
+}
+
+.main-weather {
+    
+    max-width: 80%;
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 3px;
+    margin: 2%;
+    padding: 2%;
+    line-height: 200%;
+}
+
+#cords, .temp-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-details {
+    max-width: 80%;
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 3px;
+    margin: 2%;
+    padding: 2%;
+    line-height: 200%;
+}
+
+.other-weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    color: #fff;
+    text-align: center;
+}
+
+.social-icon {
+    color: #fff;
+    margin: 0 10px 10px 10px;
+}
+
+@media screen and (max-width: 575px) {
+    
+}
+
+
+
